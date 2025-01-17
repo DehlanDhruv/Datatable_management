@@ -1,0 +1,18 @@
+
+.sidebar{
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
+    gap: 5%;
+    padding-top: 1%;
+    position: fixed;
+    width: 5vw;
+    z-index: 10;
+    margin-top: 4vw;
+  border: 1px solid #dddddd;
+  background-color: white;
+  
+  }

@@ -1,0 +1,278 @@
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 95%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-button {
+  padding: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.icon-button:hover {
+  background-color: #f0f0f0;
+}
+
+.file-name-input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auto-save-text {
+  font-size: 14px;
+  color: #10b981;
+}
+
+.toggle-switch {
+  width: 48px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.toggle-switch.on {
+  background-color: #10b981;
+}
+
+.toggle-knob {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  transform: translateX(2px);
+}
+
+.toggle-knob.on {
+  transform: translateX(26px);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  width: 95%;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.search-input {
+  padding: 8px 8px 8px 32px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 256px;
+}
+
+.toolbar-button {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toolbar-button:hover {
+  background-color: #f9fafb;
+}
+
+.enrich-button {
+  padding: 8px 16px;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enrich-button:hover {
+  background-color: #111827;
+}
+
+.table-container {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow-x: auto;
+  overflow-y: scroll;
+  width: fit-content;
+}
+
+.custom-table{
+  overflow-y: scroll;
+  
+}
+
+.table-container table{
+  margin: 20px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-container table th,
+.table-container table td {
+  padding: 10px;
+  min-width: 75px;
+  text-align: left;
+}
+.table-container table th{
+  text-align: center;
+}
+.table-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 16px;
+  background-color: #f9fafb;
+  font-weight: 500;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-column {
+  text-align: left;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-cell {
+  display: flex;
+  align-items: center;
+}
+
+.row-index {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d1d5db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.loading-text {
+  color: #6b7280;
+}
+
+.error-text {
+  color: #ef4444;
+}
+
+.link-text {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+}
+
+.add-row-container {
+  padding: 16px;
+  display: flex;
+}
+
+.add-row-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.add-row-button:hover {
+  color: #111827;
+}
+
+
+.toolbar-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+
+/* Default button style */
+.toolbar-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.toolbar-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Highlighted button styles */
+.toolbar-button.active-sort {
+  background-color: #4caf50; /* Green for active sort */
+  color: white;
+}

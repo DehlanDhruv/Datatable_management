@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    border-bottom: 1px solid #e5e7eb; 
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    top: 0px;
+    height: 4vw;
+  }
+  
+  .header div{
+    display: flex;
+    gap: 15px;
+    padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header div p{
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: black;
+  }
+  
+  /* Button icon (user) */
+  .user-icon-btn {
+    color: #D1D5DB; /* Light gray color for the icon */
+    transition: color 0.3s ease;
+  }
+  
+  .user-icon-btn:hover {
+    color: #9CA3AF; /* Darker gray on hover */
+  }
+  
