@@ -119,9 +119,9 @@ const DataGrid = () => {
         />
         <div className="toolbar">
           <div className="grid-info">
-            <Rows4 size={"1.3vw"} style={{ color: "#9ca3af" }} /> {rows.length}{" "}
+            <Rows4 className='header-icons' style={{ color: "#9ca3af" }} /> {rows.length}{" "}
             <span>Rows</span>
-            <Columns4 size={"1.3vw"} style={{ color: "#9ca3af" }} />{" "}
+            <Columns4 className='header-icons' style={{ color: "#9ca3af" }} />{" "}
             {columns.length} <span>Columns</span>
           </div>
 
@@ -134,10 +134,10 @@ const DataGrid = () => {
                 isFilterApplied ? "active-filter" : ""
               }`}
             >
-              <Filter size={"1.3vw"} />
+              <Filter className='header-icons' />
               {isFilterApplied && (
                 <button onClick={clearFilters} className="clear-filters-btn">
-                  <XCircle size={"1.3vw"} />
+                  <XCircle className='header-icons' />
                 </button>
               )}
             </button>
@@ -178,14 +178,14 @@ const DataGrid = () => {
             onClick={() => dispatch(addColumn())}
             className="toolbar-button add-column"
           >
-            <Plus className="icon" size={"1.3vw"} />
+            <Plus className="icon"  />
             Column
           </button>
           <button
             onClick={() => dispatch(addRow())}
             className="toolbar-button add-row"
           >
-            <Plus className="icon" size={"1.3vw"} />
+            <Plus className="icon" />
             Row
           </button>
         </div>
@@ -200,9 +200,9 @@ const DataGrid = () => {
               <tr className="table-header-row">
                 <th className="table-header-cell">
                   {sortDirection === "asc" ? (
-                    <ArrowUp10 size={"1.3vw"} />
+                    <ArrowUp10 className='header-icons' size={"1.3vw"} />
                   ) : (
-                    <ArrowDown10 size={"1.3vw"} />
+                    <ArrowDown10 className='header-icons' size={"1.3vw"} />
                   )}
                 </th>
                 {columns.map((column) => (

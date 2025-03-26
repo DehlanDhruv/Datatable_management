@@ -49,7 +49,7 @@
 .grid-info {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between icons and text */
+  gap: 10px; 
   font-size: 1.2vw;
   color: black;
   font-weight: 400;
@@ -156,7 +156,7 @@
 /* Table Cell */
 .table-cell {
   padding: 1vw;
-  font-size: 1vw 0.5vw;
+  font-size: 1vw ;
   color: #4b5563;
   border: 1px solid #E9E9EA;
 }
@@ -357,8 +357,8 @@ thead .cell-input {
 }
 
 .menu-trigger.active-filter {
-  background-color: green; /* Green background when filter is applied */
-  color: white; /* White text */
+  background-color: green; 
+  color: white; 
   display: flex;
 }
 
@@ -432,7 +432,6 @@ thead .cell-input {
   top: 10vw;
 }
 
-/* Subheader */
 .subheader {
   display: flex;
   justify-content: flex-start;
@@ -448,8 +447,78 @@ thead .cell-input {
   border-bottom: 1px solid #dddddd;
 }
 
-/* Sticky Table Header */
 .data-grid-table thead {
   position: sticky;
   top: 9.3vw;
+}
+
+
+@media screen and (max-width:768px) {
+
+  .grid-info {
+    gap: 5px;
+    font-size: 8px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.search-input {
+  min-width: 50px;
+  width: 50px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 7px;
+  padding: 2px;
+}
+
+.icon{
+  margin-right: 3px;
+}
+.header-icons , .icon{
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.toolbar-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 6px;
+  font-size: 8px;
+}
+
+.toolbar{
+  gap: 5px;
+}
+
+.header div p{
+  font-size: 9px;
+}
+
+.table-cell , .table-cell span , .cell-input {
+  font-size: 8px ; 
+}
+
+.delete-button {
+  padding: 0px;
+}
+
+.table-header-cell {
+  padding: 2px 2px;
+  min-width: 10vw;
+  width: 15vw;
+}
+
+.cell-input{
+  padding: 2px;
+}
+
+.subheader{
+  top: 25px;
+}
+
+.grid-container{
+  top:47px;
+}
+
 }

@@ -36,3 +36,10 @@
     color: #9CA3AF; /* Darker gray on hover */
   }
   
+
+  @media screen and (max-width:768px) {
+    .header{
+      height: 25px;
+    }
+    
+  }
